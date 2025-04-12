@@ -38,8 +38,7 @@ function App() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { scrollYProgress } = useScroll()
-  const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0])
-  const scale = useTransform(scrollYProgress, [0, 0.05], [1, 0.95])
+  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
