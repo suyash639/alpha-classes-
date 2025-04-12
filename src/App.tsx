@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState, useRef, useEffect } from "react"
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
+import { motion, AnimatePresence, useScroll } from "framer-motion"
 import {
   BookOpen,
   Brain,
@@ -37,7 +37,7 @@ function App() {
   })
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { scrollYProgress } = useScroll()
+  
   
 
   const handleSubmit = (e: React.FormEvent) => {
